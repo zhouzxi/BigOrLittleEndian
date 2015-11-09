@@ -52,13 +52,13 @@ INT32 main()
 void CheckCPUEndian()
 {
     union
-	  {
+    {
         UINT32 iInteger;
         UINT8  szStr[4];
     } U_Test;       // 共用体中两个不同的变量共同占用一段内存
 
     U_Test.iInteger = 0x12345678;
     
-	  printf("系统是%s!\n", (0x12 == U_Test.szStr[0]) ? "大端模式" : "小端模式");
+    printf("系统是%s!\n", (0x12 == U_Test.szStr[0]) ? "大端模式" : "小端模式");
 }
 
