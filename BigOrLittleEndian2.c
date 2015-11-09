@@ -58,6 +58,6 @@ void CheckCPUEndian()
     chTest0  = ((INT8 *)&iInteger)[0];         // 低地址单元
     chTest1  = ((INT8 *)&iInteger)[1];         // 高地址单元
     
-	  printf("系统是%s!\n", (0x11 == chTest1) ? "小端模式" : "大端模式");
+    printf("系统是%s!\n", (0x11 == chTest1) ? "小端模式" : "大端模式");
 }
 
